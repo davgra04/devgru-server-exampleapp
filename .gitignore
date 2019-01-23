@@ -24,8 +24,8 @@
 
 
 
-deployment_devgru-server-app-example/
-webapp/devgru-server-app-example
+exampleapp/
+webapp/dgserv-exampleapp
 *.tar.gz
 
 

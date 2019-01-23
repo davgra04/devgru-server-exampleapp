@@ -1,4 +1,4 @@
-module gitlab.devgru.cc/devgru/devgru-server-app-example
+module gitlab.devgru.cc/devgru/dgserv-exampleapp
 
 require (
 	github.com/labstack/echo v3.3.5+incompatible
