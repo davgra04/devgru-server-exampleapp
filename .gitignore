@@ -21,3 +21,13 @@
 /Godeps/
 
 # End of https://www.gitignore.io/api/go
+
+
+
+deployment_devgru-server-app-example/
+webapp/devgru-server-app-example
+*.tar.gz
+
+
+
+
