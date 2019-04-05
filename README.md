@@ -1,31 +1,30 @@
 devgru-server-app-example
 =========================
 
-An example project for a webapp that runs on devgru-server (gitlab.devgru.cc/devgru/devgru-server)
+An example project for a webapp that runs on devgru-server.
+
 
 # Getting Started
 
 ## Build Application
 
-```
+```bash
+make clean
 make all
 ```
+
 
 ## Deploy Application
 
 ```bash
-# scp -i ~/.ssh/20190122_devgru-server.key ./deployment_devgru-server-app-example.tar.gz centos@54.203.153.151:/home/centos/
-
-# ssh -i ~/.ssh/20190122_devgru-server.key centos@54.203.153.151 "tar zxvf /home/centos/deployment_devgru-server-app-example.tar.gz"
-
-
-
-
 make deploy DGSERV_SSH_KEY=~/whatever.key
-
-
-
-
-
 ```
 
+
+## Obtain Let's Encrypt cert that includes example.devgru.cc
+
+```bash
+sudo -H /usr/bin/letsencrypt --nginx -n --agree-tos --email your@email.com -d devgru.cc -d www.devgru.cc -d example.devgru.cc --expand
+```
+
+NOTE: Include other subdomains that are deployed to the devgru-server with the -d flag.
